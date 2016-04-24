@@ -1,0 +1,244 @@
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  padding: 50px 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+.navmenu {
+  padding-top: 50px;
+  background: #FFF;
+  border-right: 1px solid #f7f8fa;
+  overflow: hidden;
+}
+.navmenu-default > .navmenu-nav > li > a {
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 30px;
+  font-weight: 600;
+}
+.navmenu-default > .navmenu-nav > .active > a {
+  background: transparent;
+  padding-right: 25px;
+  border-right: #FF0000 5px solid;
+  color: #FF0000;
+}
+.logo {
+  margin-left: 80px;
+}
+.languages {
+  list-style: none;
+  overflow: hidden;
+  margin: 30px 30px 30px 0;
+}
+.languages > li {
+  display: block;
+  float: right;
+  padding: 0 0 0 20px;
+}
+.languages > li > a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+}
+.languages > li.active > a {
+  color: #FF0000;
+}
+.navbar {
+  display: block;
+  text-align: center;
+}
+.navbar-brand {
+  display: inline-block;
+  float: none;
+}
+.navbar-toggle {
+  position: absolute;
+  float: left;
+  margin-left: 15px;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.copyright {
+  margin: 7px auto;
+  text-align: center;
+  font-size: 10px;
+  color: #555;
+}
+.container {
+  max-width: 100%;
+  background: #FFF;
+}
+
+@media (min-width: 1px) {
+  .navbar-toggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 0 0 300px;
+  }
+  .navmenu {
+    padding-top: 0;
+  }
+  .navbar {
+    display: none !important; /* IE8 fix */
+  }
+}
+#head-menu {
+  margin: 10px auto 30px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#head-menu > li {
+  display: inline-block;
+  width: 130px;
+}
+#head-menu > li > a {
+  color: #000;
+}
+#head-menu > li > a small {
+  display: block;
+  color: #bcc1c7;
+  font-style: italic;
+  font-size: 10px;
+}
+#head-menu > li.brand {
+  width: 140px;
+}
+.misa {
+  width:120px;
+  font-size:24px;
+  line-height:40px;
+  margin: 0 auto -5px;
+  color:#FF0000;
+  height:40px;
+  position: relative;
+}
+  .misa:before {
+    content:'</';
+    position:absolute;
+    left:-10px;
+    line-height:40px;
+  }
+  .misa:after {
+    content:'>';
+    position:absolute;
+    right:-10px;
+    line-height:40px;
+  }
+  .misa:after, .misa:before {
+    color:#000;
+    font-size:20px;
+    animation:2s linear 0s normal none infinite opacity;
+    -webkit-animation:2s ease-out 0s normal none infinite opacity;
+    -moz-animation:2s ease-out 0s normal none infinite opacity;
+    -o-animation:2s ease-out 0s normal none infinite opacity;
+  }
+
+.misa-alt {
+  float:left;
+  font-weight:600;
+  overflow:hidden;
+  height:40px;   
+}
+
+.misa-alt p {
+  display:inline;
+  float:left;
+  margin:0 0 0 15px;
+}
+
+.misa-alt ul {
+  margin-top:0;
+  padding-left:50px;
+  text-align:center;
+  list-style:none;
+  width: 120px;
+  animation:6s linear 0s normal none infinite change;
+  -webkit-animation:6s linear 0s normal none infinite change;
+  -moz-animation:6s linear 0s normal none infinite change;
+  -o-animation:6s linear 0s normal none infinite change;
+}
+
+.misa-alt ul li {
+  line-height:40px;
+  font-size: 10px;
+  margin:0;
+}
+
+@-webkit-keyframes opacity {
+  0%   {opacity:0;}
+  50%  {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes opacity {
+  0%   {opacity:0;}
+  50%  {opacity:1;}
+  100% {opacity:0;}
+}
+
+@-webkit-keyframes change {
+  0%   {margin-top:0;}
+  15%  {margin-top:0;}
+  25%  {margin-top:-40px;}
+  40%  {margin-top:-40px;}
+  50%  {margin-top:-80px;}
+  65%  {margin-top:-80px;}
+  75%  {margin-top:-40px;}
+  85%  {margin-top:-40px;}
+  100% {margin-top:0;}
+}
+@keyframes change {
+  0%   {margin-top:0;}
+  15%  {margin-top:0;}
+  25%  {margin-top:-40px;}
+  40%  {margin-top:-40px;}
+  50%  {margin-top:-80px;}
+  65%  {margin-top:-80px;}
+  75%  {margin-top:-40px;}
+  85%  {margin-top:-40px;}
+  100% {margin-top:0;}
+}
+
+.shine
+{
+    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 125px;
+    
+    color: rgba(255, 0, 0, 0.1);
+    -webkit-background-clip: text;
+    
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shine
+{
+    0%
+    {
+        background-position: top left;
+    }
+    100%
+    {
+        background-position: top right;
+    }
+}
