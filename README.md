@@ -1,0 +1,1 @@
+[![PushTrain build](http://localhost:90/badge/trinvh/beesoft.vn/96.svg)](https://api.github.com/repos/trinvh/beesoft.vn) [![Managed by PushTrain](http://localhost:90/badge-text/managed_by-PushTrain-F17E43.svg)](https://swiftengine.io)
